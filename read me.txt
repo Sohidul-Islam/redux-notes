@@ -61,5 +61,5 @@ Provides a third - party extension point between dispatching an action, and the 
 middleware list:
 
 1. Logger for redux
-   ---> it logs all the information related to redux in your application
-   to install the package: npm i --save redux-logger
+it logs all the information related to redux in your application
+to install the package: npm i --save redux-logger
