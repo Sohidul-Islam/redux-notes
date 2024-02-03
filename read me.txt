@@ -1,0 +1,50 @@
+1. open your project folders
+2. initialize npm 
+npm init/ npm init --yes ==> for default initialization3
+3. create a new files as js
+
+
+ 1. Entities - 
+ (
+In an Cake shop Entities are 
+Shop - Stores cakes on a shelf.
+Shopkeeper - At the front of the store.
+Customer - At the store entrance.
+ )
+ 2. Activities - 
+(
+In an Cake shop Entities are 
+Customer - Buy a cake.
+Shopkeeper - Remove a cake from the shelf, receipt to keep track.
+)
+
+
+----------------------------------
+three core concepts in redux
+----------------------------------
+1. Store - in cake shop scenerio it was the shop. (Holds the state of your application.)
+2. Action - in cake shop scenerio it was the intension to Buy_Cake. (Describes what happened.)
+3. Reducer - in cake shop scenerio Shopkeeper perform action. (Ties the store and actions together.)
+----------------------------------
+1. A store that holds the state of your application.
+2. An action that Describes the changes in the state of the application.
+3. A Reducer which actually carries out the state transition depending on the action.
+
+----------------------------------
+Three principles
+----------------------------------
+
+First principle: 
+----------------
+The state of your whole application is stored in an object tree within a single store.
+
+Second principle: 
+----------------
+The only way to change the state is to emit an action, an object describing what happened.
+
+Third principle: 
+----------------
+To specify how the state tree is transformed by actions, you write pure reducers.
+
+
+Javascript App ---> Action ---> Reducer ---> Redux store --> Javascript App
