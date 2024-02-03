@@ -63,3 +63,16 @@ middleware list:
 1. Logger for redux
 it logs all the information related to redux in your application
 to install the package: npm i --save redux-logger
+
+
+Asynchornous action:
+-----------------------
+
+Synchronous Action
+As soon as an action was dispatched, the state was immediately updated
+If you dispatch the BUY_CAKE action, the numOfCakes was right away decremented by 1 same with BUY_ICECREAM action is well.
+
+Asynchronous Action
+Asynchronous API Calls to fetch data from an end point and use that data in your application
+
+
