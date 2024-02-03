@@ -48,3 +48,18 @@ To specify how the state tree is transformed by actions, you write pure reducers
 
 
 Javascript App ---> Action ---> Reducer ---> Redux store --> Javascript App
+
+
+
+Middleware
+--------------
+* Is the suggested way to extend Redux with custom functionality
+Provides a third - party extension point between dispatching an action, and the moment it reaches the reducer
+
+* Use Middleware for loggin, crash reporting, performing asynchornous tasks etc./
+
+middleware list:
+
+1. Logger for redux
+   ---> it logs all the information related to redux in your application
+   to install the package: npm i --save redux-logger
