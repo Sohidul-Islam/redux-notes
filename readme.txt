@@ -93,3 +93,17 @@ documentation: https://github.com/reduxjs/redux-devtools/tree/main/extension#ins
 
 
 install extension by : npm install --save @redux-devtools/extension
+
+
+some inteview questions on redux: 
+1. what is redux?
+2. How do you decide whether do choose context api or rdux?
+3. what is the redux store?
+4. what are actions?
+5. what are action creators?
+6. what are reducer?
+7. How the control flows between these different parts?
+8. what exactly does the connect function do from the react-redux library?
+9. what do mapStateToProps and mapDispatchToProps actually do?
+10. Why should you dispatch an action to update the state and not update store directly?
+11. In a reducer, why should you return a new object as state and not modify the existing state object?

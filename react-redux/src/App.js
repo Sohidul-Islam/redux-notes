@@ -7,11 +7,13 @@ import IceCreamContainer from "./Components/IceCreamContainer";
 import IceCreamContainerReduxPlusHooks from "./Components/IceCreamContainerReduxPlusHooks";
 import NewCakeContainer from "./Components/NewCakeContainer";
 import ItemContainer from "./Components/ItemContainer";
+import UserContainer from "./Components/UserContainer";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <UserContainer />
         <CakeContainer />
 
         <NewCakeContainer />
