@@ -1,4 +1,4 @@
-import { BUY_CAKE } from "./cakeActionTypes";
+import { BUY_CAKE, BUY_CAKE_PAYLOAD } from "./cakeActionTypes";
 
 const initialState = {
   numOfCakes: 10,
@@ -10,6 +10,11 @@ const cakeReducer = (state = initialState, action) => {
       return {
         ...state,
         numOfCakes: state.numOfCakes - 1,
+      };
+    case BUY_CAKE_PAYLOAD:
+      return {
+        ...state,
+        numOfCakes: state.numOfCakes + action?.payload,
       };
 
     default:

@@ -85,3 +85,11 @@ install react application
 
 install redux and react-redux packages by this command
 3. npm i redux react-redux
+
+
+redux devtool extension chrome
+url: https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+documentation: https://github.com/reduxjs/redux-devtools/tree/main/extension#installation
+
+
+install extension by : npm install --save @redux-devtools/extension
