@@ -1,5 +1,5 @@
 import React from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { buyCake } from "./../Redux";
 
 // react redux pattern
@@ -13,7 +13,7 @@ In React Redux v7.1 hooks added.
 */
 
 function ReduxPlusHooks() {
-  const numOfCakes = useSelector((state) => state.numOfCakes);
+  const numOfCakes = useSelector((state) => state.cake.numOfCakes);
   const dispatch = useDispatch();
   return (
     <div>
