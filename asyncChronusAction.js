@@ -56,7 +56,6 @@ const fetchUserRequest = () => {
 
 // fetch user success
 const fetchUserSuccess = (users) => {
-  console.log("get", users);
   return {
     type: FETCH_USERS_SUCCESS,
     payload: users,
@@ -64,7 +63,7 @@ const fetchUserSuccess = (users) => {
 };
 
 // fetch user failure
-const fetchUserError = (error) => {
+const fetchUserError = (error = "") => {
   return {
     type: FETCH_USERS_FAILURE,
     payload: error,
@@ -83,7 +82,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        users: [...(state?.payload || [])],
+        users: action?.payload,
         error: "",
       };
     case FETCH_USERS_FAILURE:
@@ -91,7 +90,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         loading: false,
         users: [],
-        error: state?.payload,
+        error: action?.payload,
       };
     default:
       return {
@@ -120,6 +119,8 @@ const fetchUsers = () => {
 };
 
 const store = createStore(reducer, applyMiddleWare(thunk));
+
+console.log("Initial data output: ", store.getState());
 
 store.subscribe(() => {
   console.log("data output: ", store.getState());
