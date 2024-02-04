@@ -1,7 +1,7 @@
 import { BUY_ICECREAM } from "./iceCreamTypes";
 
 const initialState = {
-  numbOficeCream: 10,
+  numberOfIceCream: 10,
 };
 
 export const iceCreamReducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ export const iceCreamReducer = (state = initialState, action) => {
     case BUY_ICECREAM: {
       return {
         ...state,
-        numbOficeCream: state.numbOficeCream - 1,
+        numberOfIceCream: state.numberOfIceCream - 1,
       };
     }
     default:
