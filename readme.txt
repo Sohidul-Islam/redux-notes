@@ -76,3 +76,12 @@ Asynchronous Action
 Asynchronous API Calls to fetch data from an end point and use that data in your application
 
 
+# setup redux with redux
+
+install react application
+1. npm i create-react-app
+2. npx create-react-app <appname>
+
+
+install redux and react-redux packages by this command
+3. npm i redux react-redux
