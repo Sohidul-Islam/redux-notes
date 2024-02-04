@@ -47,7 +47,8 @@ const FETCH_USERS_REQUEST = "FETCH_USERS_REQUEST";
 const FETCH_USERS_SUCCESS = "FETCH_USERS_SUCCESS";
 const FETCH_USERS_FAILURE = "FETCH_USERS_FAILURE";
 
-// action creator
+// action creators list
+// -------------------------
 const fetchUserRequest = () => {
   return {
     type: FETCH_USERS_REQUEST,
